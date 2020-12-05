@@ -1,31 +1,9 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-
-  </body>
-</html>
 <!DOCTYPE HTML>
 <html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ISSUE CHECKER</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.css"/>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/pannellum@2.5.4/build/pannellum.js"></script>
     <style>
     #panorama {
         display: block;
@@ -66,123 +44,13 @@
 </head>
 
 <body>
-  <h1><a href="SchoolMapTest.html" id="text">내가 어제 그린 지도는 아마 이 지도가 맞을 지도...</a></h1>
-  <h5>TEAM 대동ㅇㅈ도</h5>
+  <h1><a href="SchoolMapTest.html" id="text">ISSUE CHECKER</a></h1>
+  <h5>TEAM 기자회견</h5>
   <div id="grid">
   <div id="index">
     <h4><a href="About.html">About</a></h4>
-    <h4><a href="SchoolMapTest.html">SchoolMap</a></h4>
-    <h4><a href="http://jeju-s.jje.hs.kr">JSHS</a></h4>
-    <h4><a href="TMI.html">TMI</a></h4>
+    <h4><a href="Today.html">Today</a></h4>
+    <h4><a href="Yesterday.html">YESTERDAY</a></h4>
   </div>
-  <div id="pano">
-  <div id="panorama"></div>
-  <script>
-    pannellum.viewer('panorama', {
-      "default": {
-          "firstScene": "main door",
-          "author": "Ko YeJune",
-          "sceneFadeDuration": 1000
-      },
-
-      "scenes": {
-          "main door": {
-            "title": "1층 현관",
-            "hfov": 110,
-            "pitch": -3,
-            "yaw": 117,
-            "type": "equirectangular",
-            // "panorama": "https://pannellum.org/images/cerro-toco-0.jpg",
-            "panorama": "main door.jpg",
-            "autoRotate": -10,
-            "autoLoad": true,
-            "hotSpots": [
-                {
-                    "pitch": -2.1,
-                    "yaw": 132.9,
-                    "type": "scene",
-                    "text": "1층 중앙 현관",
-                    "sceneId": "main right door"
-                }
-            ]
-        },
-
-        "main right door": {
-            "title": "1층 중앙 현관",
-            "hfov": 110,
-            "yaw": 5,
-            "type": "equirectangular",
-            "panorama": "main right door.jpg",
-            "autoRotate": -10,
-            "autoLoad": true,
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": 37.1,
-                    "type": "scene",
-                    "text": "교장실 앞",
-                    "sceneId": "principal",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-        },
-
-        "principal": {
-            "title": "교장실 앞",
-            "hfov": 110,
-            "yaw": 5,
-            "type": "equirectangular",
-            "panorama": "principal.jpg",
-            "autoRotate": -10,
-            "autoLoad": true,
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": 80,
-                    "type": "scene",
-                    "text": "1층 현관",
-                    "sceneId": "main door",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                },
-                {
-                    "pitch": -0.6,
-                    "yaw": 190,
-                    "type": "scene",
-                    "text": "홍보책상",
-                    "sceneId": "promotion",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-
-
-           ]
-        },
-        "promotion": {
-            "title": "홍보책상",
-            "hfov": 110,
-            "yaw": 5,
-            "type": "equirectangular",
-            "panorama": "promotion.jpg",
-            "autoRotate": -10,
-            "autoLoad": true,
-            "hotSpots": [
-                {
-                    "pitch": -0.6,
-                    "yaw": -80,
-                    "type": "scene",
-                    "text": "교장실 앞",
-                    "sceneId": "principal",
-                    "targetYaw": -23,
-                    "targetPitch": 2
-                }
-            ]
-        }
-      }
-    });
-  </script>
-  </div>
-</div>
 </body>
 </html>
